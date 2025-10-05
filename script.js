@@ -57,9 +57,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function updatePrices(period) {
         membershipCards.forEach(card => {
             const amountEl = card.querySelector('.amount');
-            const periodEl = card.querySelector('.period');
+            const periodEl = card.querySelector('.price .period') || card.querySelector('.price .session');
             if (!amountEl || !periodEl) return;
-            const value = card.getAttribute(`data-${period}`);
+            const dataAttr = period === 'session' ? 'day' : period; // map Per Session to data-day
+            const value = card.getAttribute(`data-${dataAttr}`);
             if (value) {
                 amountEl.textContent = value;
                 periodEl.textContent = `/${period}`;
