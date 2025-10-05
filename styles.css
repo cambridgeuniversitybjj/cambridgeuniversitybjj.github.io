@@ -446,6 +446,29 @@ section h3 {
     font-weight: 300;
 }
 
+/* Pricing toggle */
+.price-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.toggle-btn {
+    background: white;
+    color: #85B09C;
+    border: 1px solid #85B09C;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.toggle-btn.active {
+    background: #85B09C;
+    color: white;
+}
+
 .membership-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

@@ -18,6 +18,8 @@ document.querySelectorAll('.nav-link').forEach(link => {
 // FAQ Toggle Functionality
 document.addEventListener('DOMContentLoaded', function() {
     const faqItems = document.querySelectorAll('.faq-item');
+    const toggleBtns = document.querySelectorAll('.price-toggle .toggle-btn');
+    const membershipCards = document.querySelectorAll('.membership-card');
     
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
@@ -48,6 +50,31 @@ document.addEventListener('DOMContentLoaded', function() {
                 answer.style.maxHeight = answer.scrollHeight + 'px';
                 chevron.style.transform = 'rotate(180deg)';
             }
+        });
+    });
+
+    // Pricing toggle logic
+    function updatePrices(period) {
+        membershipCards.forEach(card => {
+            const amountEl = card.querySelector('.amount');
+            const periodEl = card.querySelector('.period');
+            if (!amountEl || !periodEl) return;
+            const value = card.getAttribute(`data-${period}`);
+            if (value) {
+                amountEl.textContent = value;
+                periodEl.textContent = `/${period}`;
+            }
+        });
+    }
+
+    toggleBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const period = btn.getAttribute('data-period');
+            toggleBtns.forEach(b => {
+                b.classList.toggle('active', b === btn);
+                b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+            });
+            updatePrices(period);
         });
     });
 });
