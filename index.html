@@ -125,7 +125,7 @@
                     <h3>Stanis Janis</h3>
                     <p class="belt">Black Belt</p>
                     <p class="role">Coach</p>
-                    <p class="bio">I began my martial arts journey in the Czech Republic, where I trained in karate and aikido and even represented my country at an international level. Upon relocating to Vienna, I transitioned to new disciplines, delving into MMA and Muay Thai. I trained alongside Mairibek Taisumov, a fighter who would later compete in the UFC. After moving to Cambridge, I continued my MMA training at the now-legendary Tsunami Gym, a club known for producing two UFC fighters: John Maguire and Luke Barnatt. My path took an unexpected turn when I tried a Brazilian Jiu-Jitsu (BJJ) class under Leo Gamarra. From that point on, I committed to BJJ, and found a second home at Brazilian Top Team Cambridge.</p>
+                    <p class="bio-text">I began my martial arts journey in the Czech Republic, where I trained in karate and aikido and even represented my country at an international level. Upon relocating to Vienna, I transitioned to new disciplines, delving into MMA and Muay Thai. I trained alongside Mairibek Taisumov, a fighter who would later compete in the UFC. After moving to Cambridge, I continued my MMA training at the now-legendary Tsunami Gym, a club known for producing two UFC fighters: John Maguire and Luke Barnatt. My path took an unexpected turn when I tried a Brazilian Jiu-Jitsu (BJJ) class under Leo Gamarra. From that point on, I committed to BJJ, and found a second home at Brazilian Top Team Cambridge.</p>
                 </div>
                 <div class="team-member">
                     <div class="member-photo">
@@ -134,7 +134,7 @@
                     <h3>Luke Flower</h3>
                     <p class="belt">Black Belt</p>
                     <p class="role">Coach</p>
-                    <p class="bio">I'm a black belt under Roger Gracie and have over 15 years of training and coaching experience. I began training and competing in MMA in 2007 as part of the Trojan Free Fights team, before starting medical school at Bristol, where I co-founded the university’s BJJ club. I’ve been fortunate to train and coach around the world, and after moving to London to start working clinically, I began training with Roger and his dad, Mauricio Gomes. I’m now a PhD student at the university, coached the MMA team last year, and am excited to help grow the uni BJJ team!</p>
+                    <p class="bio-text">I'm a black belt under Roger Gracie and have over 15 years of training and coaching experience. I began training and competing in MMA in 2007 as part of the Trojan Free Fights team, before starting medical school at Bristol, where I co-founded the university’s BJJ club. I’ve been fortunate to train and coach around the world, and after moving to London to start working clinically, I began training with Roger and his dad, Mauricio Gomes. I’m now a PhD student at the university, coached the MMA team last year, and am excited to help grow the uni BJJ team!</p>
                 </div>
                 <!-- <div class="team-member">
                     <div class="member-photo">
@@ -161,7 +161,7 @@
                     <h3>Timothy</h3>
                     <p class="belt">White Belt</p>
                     <p class="role">President</p>
-                    <p class="bio">This friendly scientist never stops. Whether it's for dancing, triathlon, taekwondo or BJJ, just expect him to be there.</p>
+                    <p class="bio-text">This friendly scientist never stops. Whether it's for dancing, triathlon, taekwondo or BJJ, just expect him to be there.</p>
                 </div>
                 <div class="team-member">
                     <div class="member-photo">
@@ -170,7 +170,7 @@
                     <h3>Emilie</h3>
                     <p class="belt">White Belt</p>
                     <p class="role">Vice-President</p>
-                    <p class="bio">Emilie is a judo-BJJ enthusiast. She started both sports as an undergraduate at UWarwick and is forever deeply thankful to her wonderful coaches and mates 😉If she can inspire others in the same way that her friends inspired her, that would be pretty amazing.</p>
+                    <p class="bio-text">Emilie is a judo-BJJ enthusiast. She started both sports as an undergraduate at UWarwick and is forever deeply thankful to her wonderful coaches and mates 😉If she can inspire others in the same way that her friends inspired her, that would be pretty amazing.</p>
                 </div>
                 <div class="team-member">
                     <div class="member-photo">
@@ -458,5 +458,21 @@
     </footer>
 
     <script src="script.js"></script>
+        <script src="script.js"></script>
+
+    <!-- To have Committee members' bio hidden unless we click on it -->
+    <script>
+    document.querySelectorAll('.team-member').forEach(member => {
+        member.addEventListener('click', (event) => {
+            // Prevent clicks inside the bio text itself from toggling again
+            if (event.target.closest('.bio-text')) return;
+
+            const bioText = member.querySelector('.bio-text');
+            const isVisible = bioText.style.display === 'block';
+            bioText.style.display = isVisible ? 'none' : 'block';
+        });
+    });
+    </script>
+
 </body>
 </html></html>

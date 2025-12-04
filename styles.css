@@ -432,6 +432,27 @@ section h3 {
     font-weight: 300;
 }
 
+.bio-text {
+    display: none;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-weight: 300;
+    text-align: left;
+}
+
+.toggle-bio {
+    background: none;
+    border: none;
+    color: #85B09C;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+
 /* Membership Section */
 .membership {
     background: #f8f9fa;
