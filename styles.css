@@ -242,6 +242,22 @@ section h3 {
     text-align: center;
 }
 
+.about-content {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.about-image {
+    width: 250px;        /* controls size */
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 1;
+}
+
 /* Schedule Section */
 
 .schedule {
