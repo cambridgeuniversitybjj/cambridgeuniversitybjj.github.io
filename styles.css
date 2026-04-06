@@ -258,6 +258,60 @@ section h3 {
     flex: 1;
 }
 
+/* Videos section */
+.videos {
+    background: #fff;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-auto-rows: 400px;
+    gap: 2rem;
+}
+
+.videos-defns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-auto-rows: max-content;
+    gap: 2rem;
+}
+
+.videos-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #85B09C;
+}
+
+.videos-item h3 {
+    color: #85B09C;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.videos-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.videos-item li {
+    margin-bottom: 0.75rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.videos-item li strong {
+    color: #1a1a1a;
+}
+
+.videos-video {
+    width: 100%;
+    height: 80%;
+}
+
 /* Schedule Section */
 
 .schedule {
