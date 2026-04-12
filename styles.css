@@ -228,7 +228,6 @@ section h3 {
 /* About Section */
 .about {
     background: #f8f9fa;
-    background: #f8f9fa;
 }
 
 .about p {
@@ -258,9 +257,11 @@ section h3 {
     flex: 1;
 }
 
+
+
 /* Videos section */
 .videos {
-    background: #fff;
+    background: #f8f9fa;
 }
 
 .videos-grid {
