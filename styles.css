@@ -257,6 +257,21 @@ section h3 {
     flex: 1;
 }
 
+/* Events section */
+.events {
+    background:white;
+}
+
+.events p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 
 /* Videos section */
@@ -264,6 +279,16 @@ section h3 {
     background: #f8f9fa;
 }
 
+.videos p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 .videos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -313,10 +338,27 @@ section h3 {
     height: 80%;
 }
 
+.container2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
 /* Schedule Section */
 
 .schedule {
     background: #ffffff;
+}
+
+.schedule p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .schedule-grid {
