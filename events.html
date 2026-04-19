@@ -1,38 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Events</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Cambridge University's premier Brazilian Jiu-Jitsu club...">
+    <meta property="og:title" content="Cambridge University Brazilian Jiu-Jitsu">
+    <meta property="og:description" content="Join our student-run BJJ club at the University of Cambridge.">
+    <meta property="og:image" content="https://cambridgeuniversitybjj.github.io/assets/logo.svg">
+
+    <!-- Cache for 1 year -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000" /> 
+    
+    <title>Cambridge University Brazilian Jiu-Jitsu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.svg" alt="BJJ Society Logo" class="logo">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#schedule" class="nav-link">Schedule</a>
+                <a href="#videos" class="nav-link">What is BJJ?</a>
+                <a href="#team" class="nav-link">Meet the Team</a>
+                <a href="#membership" class="nav-link">Membership</a>
+                <a href="#faq" class="nav-link">FAQs</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="index.html">← Back to home</a>
-  </nav>
+    <main
 
-  <main>
-    <h1>Events</h1>
+    <!-- Events Section -->
+<section id="events" class="events-page">
+    <div class="container">
+        <h1>Upcoming Events</h1>
+        <p class="section-subtitle">
+            Join us for socials, workshops, and competitions. 
 
-    <div class="event">
-      <h2>Quantum Workshop 2026</h2>
-      <p><strong>Date:</strong> March 12–14, 2026</p>
-      <p><strong>Location:</strong> Zurich</p>
-      <p>
-        A three-day workshop focusing on…
-      </p>
+        <div class="term-card">
+            <div class="term-card-image">
+                <img src="assets/may.png" alt="Easter Term 2026 Events" loading="lazy">
+            </div>
+            <div class="term-card-details">
+                <h3>Easter Term 2026</h3>
+                <p>Check out all our events this term, from workshops to socials!</p>
+                <a href="assets/may.png" class="btn btn-small" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+        </div>
+        <div class="events-grid">
+            <!-- Event 1 -->
+            <article class="event-card">
+                <div class="event-date">
+                    <span class="day">25</span>
+                    <span class="month">Apr</span>
+                </div>
+                <div class="event-details">
+                    <h3>BJJ x Capoeira x Forró</h3>
+                    <p class="event-time">4:30 PM – 6:30 PM</p>
+                    <p class="event-location">Sports Centre, Studio 2</p>
+                    <p class="event-description">
+                        Celebrate Tiradentes with a Brazilian martial arts and dance extravaganza!
+                        Capoeira (4:30–5:30 PM) and BJJ (5:30–6:30 PM).
+                    </p>
+                    <a href="https://forms.gle/V2qRE1AZQVEiXEAK7" class="btn btn-small" target="_blank" rel="noopener noreferrer">
+                        Sign Up
+                    </a>
+                </div>
+                <div class="event-image">
+                    <img src="assets/tira.png" alt="Tiradentes Event Poster" loading="lazy">
+                </div>
+            </article>
+
+            <!-- Event 2 -->
+            <article class="event-card">
+                <div class="event-date">
+                    <span class="day">10</span>
+                    <span class="month">May</span>
+                </div>
+                <div class="event-details">
+                    <h3>Beginner’s Workshop</h3>
+                    <p class="event-time">10:00 AM – 12:00 PM</p>
+                    <p class="event-location">Sports Centre, Studio 1</p>
+                    <p class="event-description">
+                        New to BJJ? Join our free beginner-friendly workshop!
+                        Learn fundamentals and meet the team.
+                    </p>
+                    <a href="https://forms.gle/abc123" class="btn btn-small" target="_blank" rel="noopener noreferrer">
+                        Register
+                    </a>
+                </div>
+                <div class="event-image">
+                    <img src="assets/beginner-workshop.jpg" alt="Beginner Workshop" loading="lazy">
+                </div>
+            </article>
+        </div>
     </div>
+</section>
+       
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#expect">What to Expect</a></li>
+                        <li><a href="team.html">Meet the Team</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Location</h3>
+                    <div class="location-info">
+                        <p>Cambridge University Sports Centre</p>
+                        <p>University of Cambridge</p>
+                        <p>Cambridge, UK</p>
+                        <a href="https://maps.app.goo.gl/y1Lu9fDJiFoUF8yH9" class="btn-map">
+                            <i class="fas fa-map-marker-alt"></i>
+                            View on Map
+                        </a>
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.920144303209!2d0.08301861212619009!3d52.208498659128786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8774861d9ffdf%3A0xb73d0c1fc075bba2!2sSports%20Centre%20and%20Gym%2C%20University%20of%20Cambridge!5e0!3m2!1sen!2suk!4v1759502338994!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/cambridgeuniversitybjj/" class="social-btn">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                        <!-- <a href="#" class="social-btn">
+                            <i class="fab fa-facebook-f"></i>
+                            Facebook
+                        </a>
+                        <a href="#" class="social-btn">
+                            <i class="fab fa-youtube"></i>
+                            YouTube
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <hr>
+                <p>The Cambridge Brazilian Jiu Jitsu Society is a student-run organization at the University of Cambridge. The Cambridge name and/or shield are trademarks of the University of Cambridge and are used by permission.</p>
+            </div>
+        </div>
+    </footer>
 
-    <div class="event">
-      <h2>Summer School on Turbulence</h2>
-      <p><strong>Date:</strong> July 5–10, 2026</p>
-      <p><strong>Location:</strong> Paris</p>
-      <p>
-        An intensive summer school covering…
-      </p>
-    </div>
+    <script src="script.js"></script>
 
-  </main>
+    <!-- To have Committee members' bio hidden unless we click on it -->
+    <script>
+    document.querySelectorAll('.team-member').forEach(member => {
+        member.addEventListener('click', (event) => {
+            // Prevent clicks inside the bio text itself from toggling again
+            if (event.target.closest('.bio-text')) return;
+
+            const bioText = member.querySelector('.bio-text');
+            const isVisible = bioText.style.display === 'block';
+            bioText.style.display = isVisible ? 'none' : 'block';
+        });
+    });
+    </script>
 
 </body>
-</html>
+</html></html>
