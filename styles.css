@@ -26,6 +26,52 @@ body {
     text-align: center;
 }
 
+/* Apply to all h3 elements */
+h3 {
+    font-family: 'Inter', sans-serif; /* Use Inter for a modern, clean look */
+    font-size: 1.4rem; /* Slightly larger than default */
+    font-weight: 700; /* Bold for emphasis */
+    color: #1a1a1a; /* Dark color for readability */
+    letter-spacing: -0.5px; /* Tighter spacing for a sharper look */
+    line-height: 1.2; /* Better vertical rhythm */
+    margin-bottom: 0.75rem; /* Consistent spacing below */
+}
+
+/* Specific adjustments for sections */
+.events h3,
+.schedule h3,
+.team h3,
+.faq h3 {
+    color: #85B09C; /* Match your brand color */
+    font-weight: 600; /* Slightly less bold for subtlety */
+}
+
+/* Schedule card headings */
+.events h3 {
+    font-size: 1.2rem;
+    color: #85B09C; /* Brand color */
+}
+
+/* Team member names (h3 in team-member) */
+.team-member h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a; /* Dark for contrast against white cards */
+}
+
+/* Schedule card headings */
+.schedule-card h3 {
+    font-size: 1.2rem;
+    color: #85B09C; /* Brand color */
+}
+
+/* FAQ question headings */
+.faq-question h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
