@@ -1,0 +1,9 @@
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="assets/Jordan.png" alt="Jordan" loading="lazy">
+                    </div>
+                    <h3>Jordan</h3>
+                    <p class="belt">Black Belt</p>
+                    <p class="role">Coach</p>
+                    <p class="bio-text">Jordan is a BJJ Black Belt and 1st Kyu Judoka who believes martial arts can positively shape lives. His focus as a coach is simple: to help people build confidence, develop resilience, and become better versions of themselves through consistent, supportive training. Away from the mats, he works as an engineer in the built environment, bringing the same problem-solving mindset, discipline, and commitment to continuous improvement that underpin his approach to coaching.</p>
+                </div>
