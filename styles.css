@@ -15,7 +15,7 @@ body {
 }
 
 /* Consolidated paragraph styles */
-.about p, .events p, .videos p, .schedule p {
+.about p, .events p, .videos p, .schedule p, .women p {
     font-size: 1.1rem;
     line-height: 1.7;
     color: #555;
@@ -358,6 +358,26 @@ section h3 {
     flex: 1;
 }
 
+/* Women session */
+.women {
+    background: #ffb6c1;
+}
+
+.women-content {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.women-image {
+    width: 250px;        /* controls size */
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.women-text {
+    flex: 1;
+}
 
 /* Events Section (Homepage and Dedicated Page) */
 .events {
