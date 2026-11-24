@@ -501,6 +501,18 @@ section h3 {
     border-bottom-right-radius: 12px;
 }
 
+.event-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+.event-gallery img { aspect-ratio: 4 / 3; }
+
+@media (max-width: 600px) {
+  .event-hero img { aspect-ratio: 4 / 3; }
+  .event-gallery { grid-template-columns: 1fr; }
+}
+
 /* Event filters (for dedicated page) */
 .event-filters {
     display: flex;
@@ -509,6 +521,8 @@ section h3 {
     margin-bottom: 2rem;
     flex-wrap: wrap;
 }
+
+
 
 .filter-btn {
     background: white;
