@@ -1482,13 +1482,13 @@ document.querySelectorAll('.faq-question').forEach(question => {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
 }
-.event-section .event-gallery figure { height: 180px; }
+.event-section .event-gallery figure { height: 240px; }
 
-@media (max-width: 600px) {
-  .event-section .event-hero { height: 240px; }
+@media (max-width: 800px) {
+  .event-section .event-hero { height: 400px; }
   .event-section .event-gallery { grid-template-columns: 1fr; }
-  .event-section .event-gallery figure { height: 160px; }
+  .event-section .event-gallery figure { height: 400px; }
 }
